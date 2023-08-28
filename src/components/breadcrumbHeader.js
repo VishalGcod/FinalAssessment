@@ -51,7 +51,7 @@ export const HeadTextDiv = styled.div`
 export const HeadTextStyle = styled.div`
   margin-top:19px;
   margin-bottom:19px;
-  margin-right:19px;
+  // margin-right:297px;
 `;
 
 export const HeadTexts = styled.div`
@@ -134,6 +134,12 @@ export const HeadRightDiv = styled.div`
   align-items:center;
   width:100%;  
 `;
+export const UserInfoDiv = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  width:15%;  
+`;
 
 export const BreadcrumbHeader = () => {
   return (
@@ -173,6 +179,7 @@ export const BreadcrumbHeader = () => {
         <Bell />
       </CircleSvg>
       <LineDiv></LineDiv>
+      <UserInfoDiv>
       <ImageDiv>
         <img src={userImg} alt="userimg"></img>
       </ImageDiv>
@@ -180,6 +187,7 @@ export const BreadcrumbHeader = () => {
       <UserName>Bessie Cooper</UserName>
       <OrgManager>Org Manager</OrgManager>
       </div>
+      </UserInfoDiv>
     <DropDown/>
     </HeadRightDiv>
     </HeaderDivFull>
