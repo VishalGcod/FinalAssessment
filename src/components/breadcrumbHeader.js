@@ -15,7 +15,7 @@ export const HeaderDivFull = styled.div`
   flex-shrink: 0;
   background: #fff;
   display: flex;
-`;
+  justify-content: center;`;
 export const DrawerIconStyle = styled.div`
   padding: 23px 20px 1175px 20px;
 `;
@@ -83,7 +83,11 @@ export const OrgNorthDiv = styled.div`
 `;
 export const CircleSvg = styled.div`
   background: url(${Circle}) no-repeat;
-  width: 3%;
+  width: 5%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const LineDiv = styled.div`
@@ -97,13 +101,13 @@ export const ImageDiv = styled.div`
 `;
 
 export const UserName = styled.div`
- color: var(--grey-t-50, #A3ADB8);
+color: var(--grey-100, #485C72);
 font-family: SF Pro Display;
-font-size: 12px;
+font-size: 13px;
 font-style: normal;
-font-weight: 300;
+font-weight: 500;
 line-height: normal;
-letter-spacing: -0.12px;
+letter-spacing: -0.13px;
 text-transform: capitalize;
 `;
 
@@ -116,6 +120,13 @@ font-weight: 300;
 line-height: normal;
 letter-spacing: -0.12px;
 text-transform: capitalize;
+`;
+
+export const HeadRightDiv = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  width:100%;  
 `;
 
 export const BreadcrumbHeader = () => {
@@ -145,6 +156,7 @@ export const BreadcrumbHeader = () => {
           </ChevronMargin>
         </HeadTexts>
       </HeadTextDiv>
+      <HeadRightDiv>
       <HeaderText />
       <CircleSvg>
         <Compass />
@@ -156,9 +168,12 @@ export const BreadcrumbHeader = () => {
       <ImageDiv>
         <img src={userImg} alt="userimg"></img>
       </ImageDiv>
+      <div>
       <UserName>Bessie Cooper</UserName>
       <OrgManager>Org Manager</OrgManager>
+      </div>
     <DropDown/>
+    </HeadRightDiv>
     </HeaderDivFull>
   );
 };
