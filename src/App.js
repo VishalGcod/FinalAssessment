@@ -1,3 +1,4 @@
+import { BodyMain } from "./components/bodyMain";
 import { BreadcrumbHeader } from "./components/breadcrumbHeader";
 import { SecondHeader } from "./components/secondHeader";
 
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <BreadcrumbHeader />
       <SecondHeader/>
+      <BodyMain/>
     </div>
   );
 }
