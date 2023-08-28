@@ -17,12 +17,27 @@ background: #F8F8F9;
 display: flex;
 justify-content: space-evenly;
 align-items:center;
+color: #242E39;
+font-family: SF Pro Display;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+`;
+export const HeadDatas=styled.div`
+width: 496px;
+height: 32px;
+flex-shrink: 0;
+background: #F8F8F9;
+display: flex;
+justify-content:center;
+align-items:center;
 `;
 
 export const SecondHeader=()=> {
   return (
     <HeadSecond>
-        <div>
+        <HeadDatas>
         <DaysMonthsYears>
             <span>Today</span>
             <span>7D</span>
@@ -34,9 +49,9 @@ export const SecondHeader=()=> {
         <div>
             <DateInput/>
         </div>
+        </HeadDatas>
         <div>
             <ButtonHeadTwo/>
-        </div>
         </div>
     </HeadSecond>
   )
