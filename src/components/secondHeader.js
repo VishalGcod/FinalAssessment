@@ -15,6 +15,7 @@ export const DaysMonthsYears=styled.div`
 height:72px;
 background: #F8F8F9;
 display: flex;
+width:100%;
 justify-content: space-evenly;
 align-items:center;
 color: #242E39;
@@ -33,6 +34,9 @@ display: flex;
 justify-content:center;
 align-items:center;
 `;
+export const BtnHeadDiv=styled.div`
+margin-left:14px;
+`;
 
 export const SecondHeader=()=> {
   return (
@@ -50,9 +54,9 @@ export const SecondHeader=()=> {
             <DateInput/>
         </div>
         </HeadDatas>
-        <div>
+        <BtnHeadDiv>
             <ButtonHeadTwo/>
-        </div>
+        </BtnHeadDiv>
     </HeadSecond>
   )
 }
