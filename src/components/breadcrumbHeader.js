@@ -15,7 +15,8 @@ export const HeaderDivFull = styled.div`
   flex-shrink: 0;
   background: #fff;
   display: flex;
-  justify-content: center;`;
+  justify-content: space-between;
+  `;
 export const DrawerIconStyle = styled.div`
   padding: 23px 20px 1175px 20px;
 `;
@@ -47,6 +48,8 @@ export const DrawerFontDiv = styled.div`
 export const HeadTextDiv = styled.div`
   display: flex;
   flex-direction: column;
+  width:25%;
+  margin-right:400px;
 `;
 export const HeadTextStyle = styled.div`
   margin-top:19px;
@@ -89,7 +92,7 @@ export const OrgNorthDiv = styled.div`
 `;
 export const CircleSvg = styled.div`
   background: url(${Circle}) no-repeat;
-  width: 5%;
+  width: 7%;
   height: 50%;
   display: flex;
   justify-content: flex-start;
@@ -130,15 +133,25 @@ text-transform: capitalize;
 
 export const HeadRightDiv = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items:center;
-  width:100%;  
+  width:40%;  
 `;
 export const UserInfoDiv = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items:center;
-  width:15%;  
+  width:25%;  
+`;
+export const UserInfoTexts = styled.div`
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items:center;
+  width:100%;  
+`;
+export const SvgAlignDiv = styled.div`
+  margin-left:7px;
 `;
 
 export const BreadcrumbHeader = () => {
@@ -173,20 +186,20 @@ export const BreadcrumbHeader = () => {
       <HeaderText />
       </HeadTextStyle>
       <CircleSvg>
-        <Compass />
+        <SvgAlignDiv><Compass /></SvgAlignDiv>
       </CircleSvg>
       <CircleSvg>
-        <Bell />
+      <SvgAlignDiv><Bell/></SvgAlignDiv>
       </CircleSvg>
       <LineDiv></LineDiv>
       <UserInfoDiv>
       <ImageDiv>
         <img src={userImg} alt="userimg"></img>
       </ImageDiv>
-      <div>
+      <UserInfoTexts>
       <UserName>Bessie Cooper</UserName>
       <OrgManager>Org Manager</OrgManager>
-      </div>
+      </UserInfoTexts>
       </UserInfoDiv>
     <DropDown/>
     </HeadRightDiv>
