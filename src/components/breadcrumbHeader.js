@@ -48,6 +48,12 @@ export const HeadTextDiv = styled.div`
   display: flex;
   flex-direction: column;
 `;
+export const HeadTextStyle = styled.div`
+  margin-top:19px;
+  margin-bottom:19px;
+  margin-right:19px;
+`;
+
 export const HeadTexts = styled.div`
   display: flex;
   margin-left: 16px;
@@ -86,7 +92,7 @@ export const CircleSvg = styled.div`
   width: 5%;
   height: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 `;
 
@@ -157,7 +163,9 @@ export const BreadcrumbHeader = () => {
         </HeadTexts>
       </HeadTextDiv>
       <HeadRightDiv>
+        <HeadTextStyle>
       <HeaderText />
+      </HeadTextStyle>
       <CircleSvg>
         <Compass />
       </CircleSvg>
