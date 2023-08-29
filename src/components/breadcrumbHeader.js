@@ -36,7 +36,6 @@ export const DrawerFontPadding = styled.div`
 
 export const DrawerFontDiv = styled.div`
   color: var(--blue-t-15, #3d7ab6);
-  font-family: SF Pro Display;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -69,7 +68,6 @@ export const ChevronMargin = styled.div`
 
 export const OrgNorth = styled.div`
   color: var(--blue-100, #1b63a9);
-  font-family: SF Pro Display;
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
@@ -111,7 +109,6 @@ export const ImageDiv = styled.div`
 
 export const UserName = styled.div`
 color: var(--grey-100, #485C72);
-font-family: SF Pro Display;
 font-size: 13px;
 font-style: normal;
 font-weight: 500;

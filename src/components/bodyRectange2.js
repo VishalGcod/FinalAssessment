@@ -1,8 +1,8 @@
 import React from "react";
 import { styled } from "styled-components";
 import { VectorLine } from "../assets/vectorLine";
-import { Graph } from "./graph";
-
+import { useState } from "react";
+import { Graph, UserData } from "./graph";
 
 export const BottomBoxHead = styled.div`
   width: 793px;
@@ -141,6 +141,14 @@ export const RightBoxDiv1 = styled.div`
 `;
 
 export const BodyRectangeBottom = () => {
+
+  const [userData, setUserData] = useState({
+    labels:UserData.map((data)=>data.year),
+    datasets:[{
+      label:"datas graph",
+      data:UserData.map((data)=>data.users),
+    }]
+  })
   return (
     <div>
       <BottomBoxHead>
@@ -160,7 +168,7 @@ export const BodyRectangeBottom = () => {
         <DivSecongRight></DivSecongRight>
       </DivSecond>
       <BottomGraphDivs>
-        <GraphDiv>Graph Here</GraphDiv>
+        <GraphDiv><div style={{width:'450px'}}><Graph chartData={userData} /></div></GraphDiv>
         <GraphRightDiv>
           <GraphRightBox>
             <RightBoxDiv1>
