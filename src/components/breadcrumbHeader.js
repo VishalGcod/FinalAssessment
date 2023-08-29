@@ -18,12 +18,13 @@ export const HeaderDivFull = styled.div`
   justify-content: space-between;
   `;
 export const DrawerIconStyle = styled.div`
-  padding: 23px 20px 1175px 20px;
+  padding: 20px;;
 `;
 export const DrawerFontStyle = styled.div`
   color: var(--grey-s-10, #415367);
-  font-family: SF Pro Display;
   font-size: 18px;
+  font-family: SANS-SERIF;
+
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -32,10 +33,12 @@ export const DrawerFontStyle = styled.div`
 `;
 export const DrawerFontPadding = styled.div`
   padding: 14px;
+  margin-left:-10px;
 `;
 
 export const DrawerFontDiv = styled.div`
   color: var(--blue-t-15, #3d7ab6);
+  font-family: SANS-SERIF;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -44,21 +47,32 @@ export const DrawerFontDiv = styled.div`
   text-transform: capitalize;
 `;
 
+export const DrawerFontDivGrey = styled.div`
+color: var(--grey-t-50, #A3ADB8);
+font-family: SF Pro Display;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.13px;
+text-transform: capitalize;
+`;
+
+
 export const HeadTextDiv = styled.div`
   display: flex;
   flex-direction: column;
   width:25%;
-  margin-right:400px;
+  margin-right:415px;
 `;
 export const HeadTextStyle = styled.div`
   margin-top:19px;
   margin-bottom:19px;
-  // margin-right:297px;
 `;
 
 export const HeadTexts = styled.div`
   display: flex;
-  margin-left: 16px;
+  margin-left: 5px;
   margin-top: -10px;
 `;
 export const ChevronMargin = styled.div`
@@ -100,6 +114,7 @@ export const CircleSvg = styled.div`
 export const LineDiv = styled.div`
   width: 1px;
   height: 20px;
+  margin-right:12px;
   background: #d1d6dc;
 `;
 
@@ -110,28 +125,31 @@ export const ImageDiv = styled.div`
 export const UserName = styled.div`
 color: var(--grey-100, #485C72);
 font-size: 13px;
+font-family: SANS-SERIF;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: -0.13px;
 text-transform: capitalize;
+display:flex;
+width:90px;
 `;
 
 export const OrgManager = styled.div`
 color: var(--grey-t-50, #A3ADB8);
-font-family: SF Pro Display;
+font-family: SANS-SERIF;
 font-size: 12px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
 letter-spacing: -0.12px;
 text-transform: capitalize;
-margin-left:-10px;
+margin-left:-20px;
 `;
 
 export const HeadRightDiv = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items:center;
   width:40%;  
 `;
@@ -154,7 +172,7 @@ export const SvgAlignDiv = styled.div`
 `;
 export const DropDownDiv=styled.div`
 margin-bottom:10px;
-margin-right:6px;
+margin-left:-13px;
 
 `;
 
@@ -179,7 +197,7 @@ export const BreadcrumbHeader = () => {
           <ChevronMargin>
             <ChevronRight />
           </ChevronMargin>
-          <DrawerFontDiv>Dashboard</DrawerFontDiv>
+          <DrawerFontDivGrey>Dashboard</DrawerFontDivGrey>
           <ChevronMargin>
             <ChevronRight />
           </ChevronMargin>

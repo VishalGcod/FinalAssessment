@@ -10,6 +10,7 @@ background: #F8F8F9;
 display: flex;
 justify-content:flex-end;
 align-items:center;
+margin-left:-20px;
 `;
 export const DaysMonthsYears=styled.div`
 height:72px;
@@ -19,7 +20,7 @@ width:100%;
 justify-content: space-evenly;
 align-items:center;
 color: #242E39;
-font-family: SF Pro Display;
+font-family: SANS-SERIF;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;

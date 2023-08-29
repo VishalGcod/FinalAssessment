@@ -51,16 +51,17 @@ export const BlueBox = styled.div`
 `;
 export const TopRectRightHeading = styled.div`
   color: #242e39;
-  font-family: SF Pro Display;
+  font-family: SANS-SERIF;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   width: 324px;
+  width: 400px;
 `;
 export const TopRectRightText = styled.div`
   color: var(--grey-t-15, #637487);
-  font-family: SF Pro Display;
+  font-family: SANS-SERIF;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -89,7 +90,7 @@ export const Stars = styled(Rate)`
 `;
 export const RatingNumber = styled.div`
   color: var(--grey-s-50, #242e39);
-  font-family: SF Pro Display;
+  font-family: SANS-SERIF;
   font-size: 42px;
   font-style: normal;
   font-weight: 300;
@@ -98,7 +99,7 @@ export const RatingNumber = styled.div`
 
 export const RatingText = styled.div`
   color: var(--grey-s-50, #242e39);
-  font-family: SF Pro Display;
+  font-family: SANS-SERIF;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -117,7 +118,7 @@ export const ColumnDividorMargin = styled.div`
 `;
 export const CountNumbers = styled.div`
   color: var(--grey-s-50, #242e39);
-  font-family: SF Pro Display;
+  font-family: SANS-SERIF;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -126,7 +127,7 @@ export const CountNumbers = styled.div`
 
 export const CountNumbersOrange = styled.div`
 color: #FFA642;
-  font-family: SF Pro Display;
+font-family: SANS-SERIF;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -134,7 +135,7 @@ color: #FFA642;
 `;
 export const CountTexts = styled.div`
 color: var(--grey-t-15, #637487);
-font-family: SF Pro Display;
+font-family: SANS-SERIF;
 font-size: 14px;
 font-style: normal;
 font-weight: 300;

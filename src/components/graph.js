@@ -13,28 +13,46 @@ export const Graph=({chartData})=> {
 export const UserData=[
     {
         id:1,
-        year:2016,
-        users:10000,
+        year:'06 Jan',
+        users1:0,
+        users2:3000,
+
     },
     {
         id:2,
-        year:2018,
-        users:10200,
+        year:'07 Jan',
+        users1:2000,
+        users2:5000,
     },
     {
         id:3,
-        year:2020,
-        users:20000,
+        year:'08 Jan',
+        users1:0,
+        users2:2000,
     },
     {
         id:4,
-        year:2022,
-        users:23000,
+        year:'09 Jan',
+        users1:5000,
+        users2:6000,
     },
     {
         id:5,
-        year:2023,
-        users:40000,
+        year:'10 Jan',
+        users1:8000,
+        users2:6500,
+    },
+    {
+        id:5,
+        year:'11 Jan',
+        users1:8000,
+        users2:7000,
+    },
+    {
+        id:5,
+        year:'Today',
+        users1:6500,
+        users2:0,
     },
 ]
   

@@ -24,7 +24,7 @@ box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.10);
 export const BodyLeft=styled.div`
 display:flex;
 flex-direction:column;
-margin-left:10px;
+margin-left:20px;
 `;
 
 export const AsideRight=styled.div`
@@ -38,7 +38,11 @@ box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.10);
 export const Body=styled.div`
 display:flex;
 justify-content:space-between;
-width:1219px;
+width: 1220px;
+height: 746px;
+flex-shrink: 0;
+background: #F8F8F9;
+
 `;
 
 export const BodyMain=()=> {

@@ -19,7 +19,7 @@ export const AsideHeader = styled.div`
 
 export const AsideHeaderText = styled.div`
 color: #3A4A5B;
-font-family: SF Pro Display;
+font-family: SANS-SERIF;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -30,7 +30,7 @@ padding-left:20px;
 `;
 export const AsideHeaderView = styled.div`
 color: var(--grey-t-15, #637487);
-font-family: SF Pro Display;
+font-family: SANS-SERIF;
 font-size: 15px;
 font-style: normal;
 font-weight: 400;
@@ -55,13 +55,13 @@ export const AsideBlocks = styled.div`
 width: 341px;
 height: 102px;
 background: #F8F8F9;
-margin-left:13px;
+margin-left:30px;
 margin-right:13px;
 margin-top:10px
 `;
 export const AsideBlocksTitles = styled.div`
 color: var(--grey-100, #485C72);
-font-family: SF Pro Display;
+font-family: SANS-SERIF;
 font-size: 15px;
 font-style: normal;
 font-weight: 400;
@@ -82,7 +82,7 @@ line-height: normal;
 `;
 export const StarValue = styled.div`
 color: #242E39;
-font-family: SF Pro Display;
+font-family: SANS-SERIF;
 font-size: 14px;
 font-style: normal;
 font-weight: 600;
@@ -92,13 +92,13 @@ export const DividorLine = styled.div`
 width: 0px;
 height: 18px;
 flex-shrink: 0;
-troke-width: 1px;
+stroke-width: 1px;
 stroke: var(--grey-t-75, #D1D6DC);
 `;
 
 export const RateNumbers = styled.div`
 color: var(--grey-s-50, #242E39);
-font-family: SF Pro Display;
+font-family: SANS-SERIF;
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
@@ -129,10 +129,13 @@ export const ProgressBarDivs = styled.div`
   margin-right:35px;
   margin-bottom:23px;
 `;
+export const FullSideCAmpaignDivs = styled.div`
+  margin-left:-20px;
+  `;
 
 export const SideCampaign = () => {
   return (
-    <div>
+    <FullSideCAmpaignDivs>
       <AsideHeader>
         <AsideHeaderText>Active Campaigns</AsideHeaderText>
         <AsideViewDiv>
@@ -180,6 +183,6 @@ export const SideCampaign = () => {
       </BlocksInnerDiv>
       </AsideBlocks>
       {/* For mapping */}
-    </div>
+    </FullSideCAmpaignDivs>
   );
 };

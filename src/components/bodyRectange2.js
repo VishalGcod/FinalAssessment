@@ -13,7 +13,6 @@ export const BottomBoxHead = styled.div`
 export const HeaderText = styled.div`
   width: 222px;
   color: #3a4a5b;
-  font-family: SF Pro Display;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -39,7 +38,7 @@ export const GreenCircle = styled.div`
 
 export const InnerDivTexts = styled.div`
   color: #000;
-  font-family: SF Pro Display;
+  font-family: SANS-SERIF;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -100,7 +99,7 @@ export const GraphRightBoxNumbers = styled.div`
   height: 19px;
   flex-shrink: 0;
   color: var(--grey-s-70, #161c22);
-  font-family: SF Pro Display;
+  font-family: SANS-SERIF;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -109,12 +108,12 @@ export const GraphRightBoxNumbers = styled.div`
 `;
 export const GraphRightBoxCompletedTexts = styled.div`
   color: var(--grey-t-15, #637487);
-  font-family: SF Pro Display;
+  font-family: SANS-SERIF;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 12px;
-  width: 143px;
+  width: 170px;
   height: 13px;
   flex-shrink: 0;
   margin-top: 10px;
@@ -122,7 +121,7 @@ export const GraphRightBoxCompletedTexts = styled.div`
 
 export const GraphRightBoxSmallTexts = styled.div`
   color: var(--grey-t-15, #637487);
-  font-family: SF Pro Display;
+  font-family: SANS-SERIF;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -143,11 +142,20 @@ export const RightBoxDiv1 = styled.div`
 export const BodyRectangeBottom = () => {
 
   const [userData, setUserData] = useState({
-    labels:UserData.map((data)=>data.year),
+    labels:['1 Jan','2 Jan','3 Jan','4 Jan','5 Jan','6 Jan','7 Jan','8 Jan','9 Jan','10 Jan','Today'],
     datasets:[{
-      label:"datas graph",
-      data:UserData.map((data)=>data.users),
-    }]
+      label:"datas graph1",
+      data:UserData.map((data)=>data.users1),
+      borderColor: 'rgb(255, 99, 132)',
+      backgroundColor: 'rgba(255, 99, 132, 0.5)',
+    },
+    {
+    label:"datas graph2",
+      data:[1000,3000,6000,0,4000,3000,0,7000,1000,3000,6000],
+      borderColor: 'rgb(53, 162, 235)',
+      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+    }  
+  ]
   })
   return (
     <div>
@@ -168,7 +176,7 @@ export const BodyRectangeBottom = () => {
         <DivSecongRight></DivSecongRight>
       </DivSecond>
       <BottomGraphDivs>
-        <GraphDiv><div style={{width:'450px'}}><Graph chartData={userData} /></div></GraphDiv>
+        <GraphDiv><div style={{width:'450px', height:'200px', marginLeft:'50px'}}><Graph chartData={userData} /></div></GraphDiv>
         <GraphRightDiv>
           <GraphRightBox>
             <RightBoxDiv1>
