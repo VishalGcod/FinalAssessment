@@ -28,7 +28,7 @@ export const DateInput = () => {
           stroke="black"
           stroke-opacity="0.15"
         />
-        <g transform="translate(12,8)">
+        <g transform="translate(12,10)">
         <svg
           width="75"
           height="13"

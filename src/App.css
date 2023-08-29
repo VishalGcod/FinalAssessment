@@ -1,0 +1,11 @@
+/* @font-face {
+    font-family: 'SF Pro Display';
+    src: url('/path/to/font/CustomFont-Regular.woff2') format('woff2'),
+         url('/path/to/font/CustomFont-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'SF Pro Display', sans-serif;
+  } */
