@@ -1,6 +1,8 @@
 import React from "react";
 import { styled } from "styled-components";
 import { VectorLine } from "../assets/vectorLine";
+import { Graph } from "./graph";
+
 
 export const BottomBoxHead = styled.div`
   width: 793px;
@@ -158,7 +160,7 @@ export const BodyRectangeBottom = () => {
         <DivSecongRight></DivSecongRight>
       </DivSecond>
       <BottomGraphDivs>
-        <GraphDiv></GraphDiv>
+        <GraphDiv>Graph Here</GraphDiv>
         <GraphRightDiv>
           <GraphRightBox>
             <RightBoxDiv1>
