@@ -45,7 +45,7 @@ export const BodyMain=()=> {
   return (
     <Body>
         <BodyLeft>
-            <RectangleTopStyle></RectangleTopStyle>
+            <RectangleTopStyle><BodyRectangleTop/></RectangleTopStyle>
             <RectangleBottomStyle><BodyRectangeBottom/></RectangleBottomStyle>
         </BodyLeft>
         <AsideRight>
