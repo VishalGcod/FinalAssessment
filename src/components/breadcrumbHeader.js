@@ -129,6 +129,7 @@ font-weight: 300;
 line-height: normal;
 letter-spacing: -0.12px;
 text-transform: capitalize;
+margin-left:-10px;
 `;
 
 export const HeadRightDiv = styled.div`
@@ -149,9 +150,15 @@ export const UserInfoTexts = styled.div`
   justify-content: flex-start;
   align-items:center;
   width:100%;  
+  margin-left:6px;
 `;
 export const SvgAlignDiv = styled.div`
   margin-left:7px;
+`;
+export const DropDownDiv=styled.div`
+margin-bottom:10px;
+margin-right:6px;
+
 `;
 
 export const BreadcrumbHeader = () => {
@@ -201,7 +208,7 @@ export const BreadcrumbHeader = () => {
       <OrgManager>Org Manager</OrgManager>
       </UserInfoTexts>
       </UserInfoDiv>
-    <DropDown/>
+    <DropDownDiv><DropDown/></DropDownDiv>
     </HeadRightDiv>
     </HeaderDivFull>
   );
