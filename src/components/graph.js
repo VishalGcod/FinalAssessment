@@ -5,7 +5,7 @@ import { Chart as ChartJs } from "chart.js/auto";
 export const Graph=({chartData})=> {
   return (
     <div>
-      <Line data={chartData} options={options} height={170} />
+      <Line data={chartData} options={options} height={177} />
     </div>
   );
 }

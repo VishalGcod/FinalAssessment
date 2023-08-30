@@ -23,6 +23,7 @@ import {
   CloseButton,
   ApplyButton,
 } from "../styledComponents/styles";
+import { BlueSvgLine } from "../assets/blueSvgLine";
 
 export const DropDownDiv = styled.div`
   width: 336px;
@@ -44,6 +45,7 @@ export const DropDownBox = () => {
             <ViewAsFont>View as</ViewAsFont>
           </div>
         </DropDownDivHead>
+        <div style={{position:'absolute'}}><BlueSvgLine/></div>
         <LayerTwo>
           <LoggenInProfileDiv>Logged-In Profile</LoggenInProfileDiv>
           <ImageInfoDiv>
