@@ -8,7 +8,7 @@ import userImg from "../assets/Rectangle 10.png";
 import { DropDown } from "../assets/dropDown";
 import { styled, css } from "styled-components";
 import { DropDownBox } from "../components/dropDownBox";
-import { DropDownDiv, OrgManager,UserInfoTexts, UserName, UserInfoDiv, ImageDiv, LineDiv, SvgAlignDiv, CircleSvg, HeadTextStyle, HeadRightDiv, ChevronMargin, DrawerFontDivGrey, DrawerFontDiv, HeadTexts, DrawerFontStyle, DrawerFontPadding, HeadTextDiv, DrawerIconStyle, HeaderDivFull } from "../styledComponents/styles";
+import { DropDownDiv, OrgManager,UserInfoTexts, UserName, UserInfoDiv, ImageDiv, LineDiv, SvgAlignDiv, CircleSvg, HeadTextStyle, HeadRightDiv, ChevronMargin, DrawerFontDivGrey, DrawerFontDiv, HeadTexts, DrawerFontStyle, DrawerFontPadding, HeadTextDiv, DrawerIconStyle, HeaderDivFull, CircleSvg2 } from "../styledComponents/styles";
 
 export const DisplayBlock=styled.div`
 position:absolute;
@@ -61,9 +61,9 @@ export const BreadcrumbHeader = () => {
       <CircleSvg>
         <SvgAlignDiv><Compass /></SvgAlignDiv>
       </CircleSvg>
-      <CircleSvg>
+      <CircleSvg2>
       <SvgAlignDiv><Bell/></SvgAlignDiv>
-      </CircleSvg>
+      </CircleSvg2>
       <LineDiv></LineDiv>
       <UserInfoDiv>
       <ImageDiv>

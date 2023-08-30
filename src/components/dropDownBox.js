@@ -34,6 +34,7 @@ export const DropDownDiv = styled.div`
   z-index: 1;
 `;
 
+
 export const DropDownBox = () => {
   return (
     <div>
@@ -45,7 +46,7 @@ export const DropDownBox = () => {
             <ViewAsFont>View as</ViewAsFont>
           </div>
         </DropDownDivHead>
-        <div style={{position:'absolute'}}><BlueSvgLine/></div>
+        <div style={{position:'absolute', top:'37px', right:'0px'}}><BlueSvgLine/></div>
         <LayerTwo>
           <LoggenInProfileDiv>Logged-In Profile</LoggenInProfileDiv>
           <ImageInfoDiv>
@@ -112,7 +113,7 @@ export const DropDownBox = () => {
           }}
         >
           <CloseButton>Close</CloseButton>
-          <ApplyButton>Apply</ApplyButton>
+          <ApplyButton>Apply </ApplyButton>
         </div>
       </DropDownDiv>
     </div>

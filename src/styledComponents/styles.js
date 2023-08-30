@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { Rate } from "antd";
 import Circle from "../assets/circle.svg";
+import CircleDot from "../assets/circle.svg";
 
 export const HeadSecond = styled.div`
   height: 72px;
@@ -577,6 +578,14 @@ export const OrgNorthDiv = styled.div`
 `;
 export const CircleSvg = styled.div`
   background: url(${Circle}) no-repeat;
+  width: 8%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+`;
+export const CircleSvg2 = styled.div`
+  background: url(${CircleDot}) no-repeat;
   width: 8%;
   height: 50%;
   display: flex;
