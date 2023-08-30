@@ -10,7 +10,6 @@ background: #F8F8F9;
 display: flex;
 justify-content:flex-end;
 align-items:center;
-margin-left:-20px;
 `;
 export const DaysMonthsYears=styled.div`
 height:72px;
@@ -38,10 +37,16 @@ align-items:center;
 export const BtnHeadDiv=styled.div`
 margin-left:14px;
 `;
+export const SecondNavDatas=styled.div`
+display:flex;
+margin-right:20px;
+`;
+
 
 export const SecondHeader=()=> {
   return (
     <HeadSecond>
+      <SecondNavDatas>
         <HeadDatas>
         <DaysMonthsYears>
             <span>Today</span>
@@ -58,6 +63,7 @@ export const SecondHeader=()=> {
         <BtnHeadDiv>
             <ButtonHeadTwo/>
         </BtnHeadDiv>
+        </SecondNavDatas>
     </HeadSecond>
   )
 }

@@ -15,6 +15,7 @@ export const AsideHeader = styled.div`
   display:flex;
   justify-content:space-between;
   align-items:center;
+  // padding-left:20px;
 `;
 
 export const AsideHeaderText = styled.div`
@@ -55,7 +56,7 @@ export const AsideBlocks = styled.div`
 width: 341px;
 height: 102px;
 background: #F8F8F9;
-margin-left:30px;
+margin-left:13px;
 margin-right:13px;
 margin-top:10px
 `;
@@ -130,7 +131,6 @@ export const ProgressBarDivs = styled.div`
   margin-bottom:23px;
 `;
 export const FullSideCAmpaignDivs = styled.div`
-  margin-left:-20px;
   `;
 
 export const SideCampaign = () => {

@@ -34,6 +34,7 @@ flex-shrink: 0;
 border-radius: 3px;
 background: #FFF;
 box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.10);
+margin-right:20px;
 `;
 export const Body=styled.div`
 display:flex;

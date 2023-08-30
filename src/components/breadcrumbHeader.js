@@ -62,7 +62,7 @@ text-transform: capitalize;
 export const HeadTextDiv = styled.div`
   display: flex;
   flex-direction: column;
-  width:25%;
+  width:24%;
   margin-right:415px;
 `;
 export const HeadTextStyle = styled.div`
@@ -104,7 +104,7 @@ export const OrgNorthDiv = styled.div`
 `;
 export const CircleSvg = styled.div`
   background: url(${Circle}) no-repeat;
-  width: 7%;
+  width: 8%;
   height: 50%;
   display: flex;
   justify-content: flex-start;
@@ -151,7 +151,8 @@ export const HeadRightDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items:center;
-  width:40%;  
+  width:42%; 
+  margin-right:20px; 
 `;
 export const UserInfoDiv = styled.div`
   display: flex;
