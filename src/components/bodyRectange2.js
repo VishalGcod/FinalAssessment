@@ -24,31 +24,19 @@ import {
 
 export const BodyRectangeBottom = () => {
   const [userData, setUserData] = useState({
-    labels: [
-      "1 Jan",
-      "2 Jan",
-      "3 Jan",
-      "4 Jan",
-      "5 Jan",
-      "6 Jan",
-      "7 Jan",
-      "8 Jan",
-      "9 Jan",
-      "10 Jan",
-      "Today",
-    ],
+    labels: ["6 Jan", "7 Jan", "8 Jan", "9 Jan", "10 Jan", "11 Jan", "Today"],
     datasets: [
       {
         label: "datas graph1",
         data: UserData.map((data) => data.users1),
-        borderColor: "rgb(255, 99, 132)",
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
+        borderColor: "#5DC288",
+        backgroundColor: "#5DC288",
       },
       {
         label: "datas graph2",
         data: [1000, 3000, 6000, 0, 4000, 3000, 0, 7000, 1000, 3000, 6000],
-        borderColor: "rgb(53, 162, 235)",
-        backgroundColor: "rgba(53, 162, 235, 0.5)",
+        borderColor: "#3D7AB6",
+        backgroundColor: "#3D7AB6",
       },
     ],
   });
@@ -72,7 +60,7 @@ export const BodyRectangeBottom = () => {
       </DivSecond>
       <BottomGraphDivs>
         <GraphDiv>
-          <div style={{ width: "450px", height: "200px", marginLeft: "50px" }}>
+          <div style={{ width: "527px", height: "300px", marginLeft: "20px" }}>
             <Graph chartData={userData} />
           </div>
         </GraphDiv>

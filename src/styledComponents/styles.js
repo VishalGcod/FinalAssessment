@@ -4,11 +4,11 @@ import Circle from "../assets/circle.svg";
 
 export const HeadSecond = styled.div`
   height: 72px;
-  // width: 1219px;
   background: #f8f8f9;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-shrink: 0;
 `;
 export const DaysMonthsYears = styled.div`
   height: 72px;
@@ -62,7 +62,7 @@ export const BodyLeft = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-  margin-left:90px;
+  margin-left: 90px;
 `;
 
 export const AsideRight = styled.div`
@@ -178,14 +178,16 @@ export const StarSecondRow = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 140%;
-  margin-top:7px;
-  margin-left:4px;
+  margin-top: 7px;
+  margin-left: 4px;
 `;
 export const StarSecondRowLastBlock = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 85%;
+  margin-left: 7px;
+  margin-top: 6px;
 `;
 
 export const BlocksInnerDiv = styled.div`
@@ -427,7 +429,7 @@ export const GraphRightDiv = styled.div`
   width: 30%;
 `;
 export const GraphRightBox = styled.div`
-  width: 201px;
+  width: 210px;
   height: 187px;
   flex-shrink: 0;
   background-color: var(--grey-t-96, #f8f8f9);
@@ -535,7 +537,6 @@ export const HeadTextDiv = styled.div`
   width: 16%;
   margin-right: 415px;
   margin-right: 550px;
-
 `;
 export const HeadTextStyle = styled.div`
   margin-top: 19px;
@@ -624,7 +625,7 @@ export const HeadRightDiv = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 42%;
-  width:45%;
+  width: 45%;
   margin-right: 20px;
 `;
 export const UserInfoDiv = styled.div`
@@ -684,53 +685,53 @@ export const LoggenInProfileDiv = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  margin-top:15px;
-  margin-bottom:5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 `;
 export const ImageInfoDiv = styled.div`
-width: 306px;
-height: 60px;
-flex-shrink: 0;
-border-radius: 3px;
-border: 1px solid var(--grey-t-85, #E4E7EA);
-background: #FFF;
+  width: 306px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  border: 1px solid var(--grey-t-85, #e4e7ea);
+  background: #fff;
 `;
 export const LayerTwo = styled.div`
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-atart;
   height: 50px;
   flex-shrink: 0;
-  margin-left:15px;
+  margin-left: 15px;
 `;
 
 export const SecondDropDown = styled.div`
-width: 306px;
-height: 36px;
-flex-shrink: 0;
-border-radius: 3px;
-border: 1px solid var(--grey-t-85, #E4E7EA);
-background: #FFF;
+  width: 306px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  border: 1px solid var(--grey-t-85, #e4e7ea);
+  background: #fff;
 `;
 export const CloseButton = styled.button`
-display: flex;
-padding: 7px 10px;
-align-items: center;
-gap: 8px;
-border:none;
-border-radius: 3px;
-background: var(--grey-t-85, #E4E7EA);
-color:grey;
-margin-left:15px;
+  display: flex;
+  padding: 7px 10px;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 3px;
+  background: var(--grey-t-85, #e4e7ea);
+  color: grey;
+  margin-left: 15px;
 `;
 export const ApplyButton = styled.button`
-display: inline-flex;
-padding: 7px 20px;
-align-items: center;
-border-radius: 3px;
-border:none;
-background: var(--blue-100, #1B63A9);
-margin-right:15px;
-color:white;
+  display: inline-flex;
+  padding: 7px 20px;
+  align-items: center;
+  border-radius: 3px;
+  border: none;
+  background: var(--blue-100, #1b63a9);
+  margin-right: 15px;
+  color: white;
 `;

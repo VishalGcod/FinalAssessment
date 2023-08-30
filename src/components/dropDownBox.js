@@ -8,6 +8,7 @@ import { BlueDiv } from "../assets/blueDiv";
 import { BigSvgBox } from "../assets/bigSvgBox";
 import { DropDownDivHead, MyProfileFont, ViewAsFont, LayerTwo, LoggenInProfileDiv, ImageInfoDiv, SecondDropDown, CloseButton, ApplyButton } from "../styledComponents/styles";
 
+
 export const DropDownDiv = styled.div`
   width: 336px;
   height: 550px;
@@ -16,7 +17,7 @@ export const DropDownDiv = styled.div`
   background: #fff;
   z-index: 1;
   `;
-  
+
 
 export const DropDownBox=()=> {
   return (

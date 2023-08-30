@@ -5,10 +5,42 @@ import { Chart as ChartJs } from "chart.js/auto";
 export const Graph=({chartData})=> {
   return (
     <div>
-        <Line data={chartData}/>
+      <Line data={chartData} options={options} height={200} />
     </div>
-  )
+  );
 }
+
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: {
+        position: "bottom",
+        ticks: {
+          display: true,
+        },
+        grid: {
+          display: false,
+        },
+      },
+      y: {
+        type: "linear",
+        position: "left",
+        ticks: {
+          stepSize: 0,
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+      tooltip: {
+        enabled: false,
+      },
+    },
+  };
+
 
 export const UserData=[
     {
