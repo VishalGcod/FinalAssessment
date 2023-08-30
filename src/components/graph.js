@@ -5,7 +5,7 @@ import { Chart as ChartJs } from "chart.js/auto";
 export const Graph=({chartData})=> {
   return (
     <div>
-      <Line data={chartData} options={options} height={200} />
+      <Line data={chartData} options={options} height={170} />
     </div>
   );
 }
@@ -53,13 +53,13 @@ export const UserData=[
     {
         id:2,
         year:'07 Jan',
-        users1:2000,
+        users1:1500,
         users2:5000,
     },
     {
         id:3,
         year:'08 Jan',
-        users1:0,
+        users1:4000,
         users2:2000,
     },
     {
@@ -75,15 +75,15 @@ export const UserData=[
         users2:6500,
     },
     {
-        id:5,
+        id:6,
         year:'11 Jan',
-        users1:8000,
+        users1:0,
         users2:7000,
     },
     {
-        id:5,
+        id:7,
         year:'Today',
-        users1:6500,
+        users1:5000,
         users2:0,
     },
 ]

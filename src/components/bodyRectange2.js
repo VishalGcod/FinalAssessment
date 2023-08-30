@@ -31,12 +31,16 @@ export const BodyRectangeBottom = () => {
         data: UserData.map((data) => data.users1),
         borderColor: "#5DC288",
         backgroundColor: "#5DC288",
+        borderWidth: 2,
+        pointRadius: 2,
       },
       {
         label: "datas graph2",
-        data: [1000, 3000, 6000, 0, 4000, 3000, 0, 7000, 1000, 3000, 6000],
+        data: UserData.map((data) => data.users2),
         borderColor: "#3D7AB6",
         backgroundColor: "#3D7AB6",
+        borderWidth: 2,
+        pointRadius: 2,
       },
     ],
   });
@@ -60,7 +64,14 @@ export const BodyRectangeBottom = () => {
       </DivSecond>
       <BottomGraphDivs>
         <GraphDiv>
-          <div style={{ width: "527px", height: "300px", marginLeft: "20px" }}>
+          <div
+            style={{
+              width: "527px",
+              height: "300px",
+              marginLeft: "20px",
+              marginTop: "25px",
+            }}
+          >
             <Graph chartData={userData} />
           </div>
         </GraphDiv>
