@@ -767,6 +767,7 @@ export const DropDownDivProfile = styled.div`
   border-radius: 3px;
   background: #fff;
   z-index: 1;
+  box-shadow: 1px 1px 1px lightgrey;
 `;
 export const BlueLineDiv = styled.div`
   position: absolute;
