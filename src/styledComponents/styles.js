@@ -540,7 +540,7 @@ export const HeadTextDiv = styled.div`
   display: flex;
   flex-direction: column;
   width: 16%;
-  margin-right: 485px;
+  margin-right: 500px;
   margin-left: 23px;
 `;
 export const HeadTextStyle = styled.div`
@@ -637,8 +637,7 @@ export const HeadRightDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 42%;
-  width: 45%;
+  width: 34%;
   margin-right: 20px;
 `;
 export const UserInfoDiv = styled.div`
