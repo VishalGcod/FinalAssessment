@@ -492,8 +492,12 @@ export const HeaderDivFull = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+
+// changed values
 export const DrawerIconStyle = styled.div`
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 85px;
 `;
 export const DrawerFontStyle = styled.div`
   color: var(--grey-s-10, #415367);
@@ -536,8 +540,8 @@ export const HeadTextDiv = styled.div`
   display: flex;
   flex-direction: column;
   width: 16%;
-  margin-right: 415px;
-  margin-right: 550px;
+  margin-right: 485px;
+  margin-left: 23px;
 `;
 export const HeadTextStyle = styled.div`
   margin-top: 19px;
@@ -743,4 +747,59 @@ export const ApplyButton = styled.button`
   background: var(--blue-100, #1b63a9);
   margin-right: 15px;
   color: white;
+`;
+
+export const GraphOuterDiv = styled.div`
+  width: 527px;
+  height: 300px;
+  margin-left: 20px;
+  margin-top: 25px;
+`;
+
+export const DropDownButton = styled.div`
+  border: none;
+  background-color: white;
+  cursor: pointer;
+`;
+export const DropDownDivProfile = styled.div`
+  width: 336px;
+  height: 550px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  background: #fff;
+  z-index: 1;
+`;
+export const BlueLineDiv = styled.div`
+  position: absolute;
+  top: 37px;
+  right: 0px;
+`;
+export const BottomButtons = styled.div`
+  border-top: 1px solid #f0f2f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  margin-top: -15px;
+`;
+
+export const SvgBlueBoxDiv = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+`;
+
+export const BlueTextDiv = styled.div`
+  margin-left: 15px;
+  margin-top: 45px;
+`;
+
+export const DropDownUName = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 `;

@@ -47,9 +47,9 @@ export const ReduxApi = () => {
     },[])
   return <div>
     {
-        // data.map((e)=>(
-        //     <h1>{e.id}</h1>
-        // ))
+        data.map((e)=>(
+            <h1>{e.id}</h1>
+        ))
     }
   </div>;
 };

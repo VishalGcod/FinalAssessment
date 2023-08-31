@@ -1,5 +1,4 @@
 import React from "react";
-import { styled } from "styled-components";
 import { DivLines } from "../assets/divLines";
 import {
   UserInfoDiv,
@@ -22,23 +21,19 @@ import {
   SecondDropDown,
   CloseButton,
   ApplyButton,
+  BlueTextDiv,
+  BottomButtons,
+  SvgBlueBoxDiv,
+  DropDownUName,
+  DropDownDivProfile,
+  BlueLineDiv
 } from "../styledComponents/styles";
 import { BlueSvgLine } from "../assets/blueSvgLine";
-
-export const DropDownDiv = styled.div`
-  width: 336px;
-  height: 550px;
-  flex-shrink: 0;
-  border-radius: 3px;
-  background: #fff;
-  z-index: 1;
-`;
-
 
 export const DropDownBox = () => {
   return (
     <div>
-      <DropDownDiv>
+      <DropDownDivProfile>
         <DropDownDivHead>
           <MyProfileFont>My Profile</MyProfileFont>
           <DivLines />
@@ -46,7 +41,9 @@ export const DropDownBox = () => {
             <ViewAsFont>View as</ViewAsFont>
           </div>
         </DropDownDivHead>
-        <div style={{position:'absolute', top:'37px', right:'0px'}}><BlueSvgLine/></div>
+        <BlueLineDiv>
+          <BlueSvgLine />
+        </BlueLineDiv>
         <LayerTwo>
           <LoggenInProfileDiv>Logged-In Profile</LoggenInProfileDiv>
           <ImageInfoDiv>
@@ -71,51 +68,26 @@ export const DropDownBox = () => {
             <UserInfoDiv
               style={{ width: "95%", height: "100%", marginLeft: "10px" }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "100%",
-                  alignItems: "center",
-                }}
-              >
+              <DropDownUName>
                 <UserName>Bessie Cooper</UserName>
                 <div>
                   <DropDown />
                 </div>
-              </div>
+              </DropDownUName>
             </UserInfoDiv>
           </SecondDropDown>
         </LayerTwo>
-        <div style={{ marginLeft: "15px", marginTop: "45px" }}>
+        <BlueTextDiv>
           <BlueDiv />
-        </div>
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            alignItems: "center",
-            justifyContent: "center",
-            marginTop: "20px",
-          }}
-        >
+        </BlueTextDiv>
+        <SvgBlueBoxDiv>
           <BigSvgBox />
-        </div>
-        <div
-          style={{
-            borderTop: "1px solid #f0f2f4",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            width: "100%",
-            height: "60px",
-            marginTop: "-15px",
-          }}
-        >
+        </SvgBlueBoxDiv>
+        <BottomButtons>
           <CloseButton>Close</CloseButton>
           <ApplyButton>Apply </ApplyButton>
-        </div>
-      </DropDownDiv>
+        </BottomButtons>
+      </DropDownDivProfile>
     </div>
   );
 };

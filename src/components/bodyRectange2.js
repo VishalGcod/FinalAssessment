@@ -1,7 +1,7 @@
 import React from "react";
 import { VectorLine } from "../assets/vectorLine";
 import { useState } from "react";
-import { Graph, UserData } from "./graph";
+import { Graph, UserData, UserData2 } from "./graph";
 import {
   GraphRightBoxCompletedTexts,
   GraphRightBoxNumbers,
@@ -20,6 +20,7 @@ import {
   BottomBoxHead,
   HeaderText,
   DivSecongLeft,
+  GraphOuterDiv,
 } from "../styledComponents/styles";
 
 export const BodyRectangeBottom = () => {
@@ -64,16 +65,9 @@ export const BodyRectangeBottom = () => {
       </DivSecond>
       <BottomGraphDivs>
         <GraphDiv>
-          <div
-            style={{
-              width: "527px",
-              height: "300px",
-              marginLeft: "20px",
-              marginTop: "25px",
-            }}
-          >
+          <GraphOuterDiv>
             <Graph chartData={userData} />
-          </div>
+          </GraphOuterDiv>
         </GraphDiv>
         <GraphRightDiv>
           <GraphRightBox>

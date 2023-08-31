@@ -87,4 +87,49 @@ export const UserData=[
         users2:0,
     },
 ]
+
+// export const UserData2 = [
+//   {
+//     id: 1,
+//     year: "06 Jan",
+//     users1: 2200,
+//     users2: 4000,
+//   },
+//   {
+//     id: 2,
+//     year: "07 Jan",
+//     users1: 3800,
+//     users2: 4100,
+//   },
+//   {
+//     id: 3,
+//     year: "08 Jan",
+//     users1: 4900,
+//     users2: 3000,
+//   },
+//   {
+//     id: 4,
+//     year: "09 Jan",
+//     users1: 3000,
+//     users2: 4300,
+//   },
+//   {
+//     id: 5,
+//     year: "10 Jan",
+//     users1: 3800,
+//     users2: 5600,
+//   },
+//   {
+//     id: 6,
+//     year: "11 Jan",
+//     users1: 4200,
+//     users2: 5800,
+//   },
+//   {
+//     id: 7,
+//     year: "Today",
+//     users1: 3000,
+//     users2: 7000,
+//   },
+// ];
   

@@ -8,9 +8,9 @@ export const BlueSvgLine = () => {
         width="160"
         height="2"
         viewBox="0 0 181 2"
-        fill="blue"
+        fill="#1B63A9"
       >
-        <path d="M0 1L181 1.00002" stroke="blue" />
+        <path d="M0 1L181 1.00002" stroke="#1B63A9" />
       </svg>
     </div>
   );

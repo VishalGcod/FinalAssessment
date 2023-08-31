@@ -3,7 +3,6 @@ import { BodyRectangleTop } from './bodyRectangle39';
 import { BodyRectangeBottom } from './bodyRectange2';
 import { SideCampaign } from './sideCampaign';
 import { Body, BodyLeft, RectangleBottomStyle, RectangleTopStyle, AsideRight } from "../styledComponents/styles";
-import { styled } from 'styled-components';
 
 export const BodyMain=()=> {
   return (
