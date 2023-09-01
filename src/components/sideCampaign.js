@@ -24,6 +24,7 @@ import {
   AsideHeaderView,
   AsideViewDiv,
   AsideHeaderText,
+  StarFirstRow
 } from "../styledComponents/styles";
 
 export const SideCampaign = () => {
@@ -43,12 +44,12 @@ export const SideCampaign = () => {
         <BlocksInnerDiv>
           <div>
             <AsideBlocksTitles>Mid-Process Survey</AsideBlocksTitles>
-            <StarSecondRow>
+            <StarFirstRow>
               <StarRatingBlocks allowHalf defaultValue={4.1} />
               <StarValue>4.1</StarValue>
               <DivLines />
               <RateNumbers>457</RateNumbers>
-            </StarSecondRow>
+            </StarFirstRow>
           </div>
           <ProgressBarDivs>
             <BlockOneProgressBar />
@@ -63,7 +64,7 @@ export const SideCampaign = () => {
             <StarSecondRow>
               <StarRatingBlocks allowHalf defaultValue={4.1} />
               <StarValue>4.1</StarValue>
-              <DivLines/>
+              <DivLines />
               <RateNumbers>1800</RateNumbers>
             </StarSecondRow>
           </div>

@@ -7,6 +7,8 @@ import { CustomStyledTable } from "../styledComponents/styles";
 export const ApiDisplay = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state?.datas);
+  const loading = useSelector((state) => state?.loading);
+  const error = useSelector((state) => state?.error);
   useEffect(() => {
     dispatch(fetching());
   }, []);
@@ -33,6 +35,12 @@ export const ApiDisplay = () => {
     },
   ];
 
+  if (loading) {
+    return <h2>loading Your Api...</h2>;
+  }
+  if (error) {
+    return <h2>Error... {error.message}</h2>;
+  }
   return (
     <CustomStyledTable
       columns={columns}

@@ -85,7 +85,7 @@ export const BodyRectangleTop = () => {
           <CountNumbersOrange>14</CountNumbersOrange>
           <CountTexts>Incomplete Profiles</CountTexts>
         </BottomTextDivsMargin>
-        <DividorLinesSmall />{" "}
+        <DividorLinesSmall />
         <BottomTextDivsMargin>
           <CountNumbers>56.3%</CountNumbers>
           <CountTexts>Completion Rate</CountTexts>

@@ -183,13 +183,25 @@ export const StarSecondRow = styled.div`
   margin-top: 7px;
   margin-left: 4px;
 `;
+export const StarFirstRow = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 130%;
+  margin-top: 7px;
+  margin-left: 4px;
+`;
 export const StarSecondRowLastBlock = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 85%;
+  width: 90%;
   margin-left: 7px;
   margin-top: 6px;
+`;
+
+export const VectorDividor = styled.div`
+margin-left:15px
 `;
 
 export const BlocksInnerDiv = styled.div`
@@ -478,13 +490,21 @@ export const GraphRightBoxSmallTexts = styled.div`
   flex-shrink: 0;
 `;
 
-export const RightBoxDiv1 = styled.div`
+export const RightBoxDivTop = styled.div`
   display: flex;
   flex-direction: column;
   height: 80%;
   margin-left: 20px;
   margin-top: 15px;
 `;
+export const RightBoxDivBottom = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin-left: 20px;
+  margin-top: 5px;
+`;
+
 export const HeaderDivFull = styled.div`
   // width: 1219px;
   height: 70px;

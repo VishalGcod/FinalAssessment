@@ -5,7 +5,8 @@ import { Graph, UserData, UserData2 } from "./graph";
 import {
   GraphRightBoxCompletedTexts,
   GraphRightBoxNumbers,
-  RightBoxDiv1,
+  RightBoxDivTop,
+  RightBoxDivBottom,
   GraphRightBoxSmallTexts,
   GraphRightBox,
   GraphRightDiv,
@@ -21,6 +22,7 @@ import {
   HeaderText,
   DivSecongLeft,
   GraphOuterDiv,
+  VectorDividor
 } from "../styledComponents/styles";
 
 export const BodyRectangeBottom = () => {
@@ -71,20 +73,22 @@ export const BodyRectangeBottom = () => {
         </GraphDiv>
         <GraphRightDiv>
           <GraphRightBox>
-            <RightBoxDiv1>
+            <RightBoxDivTop>
               <GraphRightBoxSmallTexts>In Last 7 Days</GraphRightBoxSmallTexts>
               <GraphRightBoxNumbers>357</GraphRightBoxNumbers>
               <GraphRightBoxCompletedTexts>
                 Transactions Completed
               </GraphRightBoxCompletedTexts>
-            </RightBoxDiv1>
-            <VectorLine />
-            <RightBoxDiv1>
+            </RightBoxDivTop>
+            <VectorDividor>
+              <VectorLine />
+            </VectorDividor>
+            <RightBoxDivBottom>
               <GraphRightBoxNumbers>209</GraphRightBoxNumbers>
               <GraphRightBoxCompletedTexts>
                 Surveys Completed
               </GraphRightBoxCompletedTexts>
-            </RightBoxDiv1>
+            </RightBoxDivBottom>
           </GraphRightBox>
         </GraphRightDiv>
       </BottomGraphDivs>
