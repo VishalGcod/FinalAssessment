@@ -9,9 +9,11 @@ export const ApiDisplay = () => {
   const data = useSelector((state) => state?.datas);
   const loading = useSelector((state) => state?.loading);
   const error = useSelector((state) => state?.error);
+
   useEffect(() => {
     dispatch(fetching());
   }, []);
+  
   const columns = [
     {
       title: "Id",

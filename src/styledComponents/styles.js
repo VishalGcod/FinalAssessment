@@ -605,7 +605,6 @@ export const CircleSvg = styled.div`
   width: 8%;
   height: 50%;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 `;
 export const CircleSvg2 = styled.div`
@@ -613,8 +612,8 @@ export const CircleSvg2 = styled.div`
   width: 8%;
   height: 50%;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  margin-left: -5px;
 `;
 
 export const LineDiv = styled.div`

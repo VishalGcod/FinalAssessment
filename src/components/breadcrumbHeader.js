@@ -32,6 +32,7 @@ import {
   DropDownButton,
   DisplayBlock,
 } from "../styledComponents/styles";
+import CircleDot from "../assets/circleDot";
 
 export const BreadcrumbHeader = () => {
   const [disp, setDisp] = useState(false);
@@ -58,9 +59,6 @@ export const BreadcrumbHeader = () => {
             <ChevronRight />
           </ChevronMargin>
           <DrawerFontDivGrey>Dashboard</DrawerFontDivGrey>
-          <ChevronMargin>
-            <ChevronRight />
-          </ChevronMargin>
         </HeadTexts>
       </HeadTextDiv>
       <HeadRightDiv>
@@ -72,11 +70,12 @@ export const BreadcrumbHeader = () => {
             <Compass />
           </SvgAlignDiv>
         </CircleSvg>
-        <CircleSvg2>
+        {/* <CircleSvg2>
           <SvgAlignDiv>
             <Bell />
           </SvgAlignDiv>
-        </CircleSvg2>
+        </CircleSvg2> */}
+        <CircleDot/>
         <LineDiv></LineDiv>
         <UserInfoDiv>
           <ImageDiv>
