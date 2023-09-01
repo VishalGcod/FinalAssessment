@@ -2,7 +2,7 @@ import React from "react";
 import NorthPacific from "../assets/North Pacific.svg";
 import { DropDown2 } from "../assets/dropDown2";
 import { DividorLine1 } from "../assets/DividorLine1";
-import { ColumnDividor } from "./columnDividor";
+import { ColumnDividor } from "../assets/columnDividor";
 import usersImages from "../assets/Frame 3.png";
 import { DividorLinesSmall } from "../assets/dividorLinesSmall";
 import {

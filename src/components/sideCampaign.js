@@ -1,7 +1,6 @@
 import React from "react";
 import Arrow from "../assets/Arrow.svg";
 import { DivLines } from "../assets/divLines";
-// import { ProgressBarReact } from "../assets/progressBar";
 import {
   BlockFourProgressBar,
   BlockOneProgressBar,

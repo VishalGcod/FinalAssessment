@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import { Rate } from "antd";
 import Circle from "../assets/circle.svg";
 import CircleDot from "../assets/circle.svg";
+import { Table } from "antd";
 
 export const HeadSecond = styled.div`
   height: 72px;
@@ -767,7 +768,7 @@ export const DropDownDivProfile = styled.div`
   border-radius: 3px;
   background: #fff;
   z-index: 1;
-  box-shadow: 1px 1px 1px lightgrey;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 `;
 export const BlueLineDiv = styled.div`
   position: absolute;
@@ -802,4 +803,25 @@ export const DropDownUName = styled.div`
   justify-content: space-between;
   width: 100%;
   align-items: center;
+`;
+
+export const CustomStyledTable = styled(Table)`
+  .ant-table-thead > tr > th {
+    background-color: pink;
+  }
+  .ant-table-tbody > tr > td {
+    background-color: lavender;
+  }
+  .ant-table-tbody > tr > td,
+  .ant-table-thead > tr > th {
+    color: grey;
+  }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .ant-table-tbody > tr {
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    border-right: 1px solid #e8e8e8;
+  }
 `;

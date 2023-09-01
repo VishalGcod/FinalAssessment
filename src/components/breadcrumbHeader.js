@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { DrawerIcon } from "../assets/drawerIcon";
-import { ChevronRight } from "./chevronRight";
+import { ChevronRight } from "../assets/chevronRight";
 import { HeaderText } from "../assets/headerText";
 import { Compass } from "../assets/compass";
 import { Bell } from "../assets/bell";

@@ -24,8 +24,8 @@ export const fetching = () => {
           },
         }
       );
-      console.log(response.data);
-      dispatch(fetchedDatas(response.data));
+      console.log(response?.data);
+      dispatch(fetchedDatas(response?.data));
     } catch (error) {
       console.error(error);
     }
