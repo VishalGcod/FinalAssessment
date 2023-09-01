@@ -7,6 +7,7 @@ import {
   HeadDatas,
   DaysMonthsYears,
   BtnHeadDiv,
+  SevenDdiv
 } from "../styledComponents/styles";
 
 export const SecondHeader = () => {
@@ -16,7 +17,7 @@ export const SecondHeader = () => {
         <HeadDatas>
           <DaysMonthsYears>
             <span>Today</span>
-            <span>7D</span>
+            <SevenDdiv>7D</SevenDdiv>
             <span>15D</span>
             <span>1M</span>
             <span>6M</span>

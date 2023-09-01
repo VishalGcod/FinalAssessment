@@ -29,6 +29,9 @@ const options = {
       ticks: {
         stepSize: 0,
       },
+      grid: {
+        display: true,
+      },
     },
   },
   plugins: {

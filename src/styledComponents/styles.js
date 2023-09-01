@@ -856,3 +856,14 @@ export const DisplayBlock = styled.div`
       opacity: 1;
     `}
 `;
+
+export const SevenDdiv = styled.div`
+  width: 34px;
+  height: 23px;
+  flex-shrink: 0;
+  border-radius: 13px;
+  background: var(--Blue-T-85, #dde8f2);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+`;
