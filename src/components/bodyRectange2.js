@@ -22,7 +22,7 @@ import {
   HeaderText,
   DivSecongLeft,
   GraphOuterDiv,
-  VectorDividor
+  VectorDividor,
 } from "../styledComponents/styles";
 
 export const BodyRectangeBottom = () => {

@@ -26,7 +26,7 @@ import {
   SvgBlueBoxDiv,
   DropDownUName,
   DropDownDivProfile,
-  BlueLineDiv
+  BlueLineDiv,
 } from "../styledComponents/styles";
 import { BlueSvgLine } from "../assets/blueSvgLine";
 

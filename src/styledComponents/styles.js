@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled, css } from "styled-components";
 import { Rate } from "antd";
 import Circle from "../assets/circle.svg";
 import CircleDot from "../assets/circle.svg";
@@ -201,7 +201,7 @@ export const StarSecondRowLastBlock = styled.div`
 `;
 
 export const VectorDividor = styled.div`
-margin-left:15px
+  margin-left: 15px;
 `;
 
 export const BlocksInnerDiv = styled.div`
@@ -229,20 +229,19 @@ export const TopRect = styled.div`
   display: flex;
 `;
 export const BottomRect = styled.div`
-  width: 100%;
+  width: 95%;
   height: 50%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-left: -10px;
 `;
 export const TopRectLeft = styled.div`
-  width: 75%;
+  width: 70%;
   display: flex;
   align-items: center;
 `;
 export const TopRectRight = styled.div`
-  width: 25%;
+  width: 30%;
   display: flex;
   align-items: center;
 `;
@@ -844,4 +843,17 @@ export const CustomStyledTable = styled(Table)`
   .ant-table-tbody > tr > td {
     border-right: 1px solid #e8e8e8;
   }
+`;
+export const DisplayBlock = styled.div`
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  ${(props) =>
+    props.show &&
+    css`
+      opacity: 1;
+    `}
 `;

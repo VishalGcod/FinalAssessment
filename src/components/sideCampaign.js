@@ -24,7 +24,7 @@ import {
   AsideHeaderView,
   AsideViewDiv,
   AsideHeaderText,
-  StarFirstRow
+  StarFirstRow,
 } from "../styledComponents/styles";
 
 export const SideCampaign = () => {
@@ -39,7 +39,6 @@ export const SideCampaign = () => {
           </ArrowAside>
         </AsideViewDiv>
       </AsideHeader>
-      {/* For mapping */}
       <AsideBlocks>
         <BlocksInnerDiv>
           <div>
@@ -108,7 +107,6 @@ export const SideCampaign = () => {
           </ProgressBarDivs>
         </BlocksInnerDiv>
       </AsideBlocks>
-      {/* For mapping */}
     </FullSideCAmpaignDivs>
   );
 };

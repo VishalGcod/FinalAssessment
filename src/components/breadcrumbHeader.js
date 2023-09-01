@@ -6,7 +6,6 @@ import { Compass } from "../assets/compass";
 import { Bell } from "../assets/bell";
 import userImg from "../assets/Rectangle 10.png";
 import { DropDown } from "../assets/dropDown";
-import { styled, css } from "styled-components";
 import { DropDownBox } from "../components/dropDownBox";
 import {
   DropDownDiv,
@@ -31,21 +30,8 @@ import {
   HeaderDivFull,
   CircleSvg2,
   DropDownButton,
+  DisplayBlock,
 } from "../styledComponents/styles";
-
-export const DisplayBlock = styled.div`
-  position: absolute;
-  top: 60px;
-  right: 30px;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  ${(props) =>
-    props.show &&
-    css`
-      opacity: 1;
-    `}
-`;
 
 export const BreadcrumbHeader = () => {
   const [disp, setDisp] = useState(false);
@@ -59,11 +45,9 @@ export const BreadcrumbHeader = () => {
         <DrawerIcon />
       </DrawerIconStyle>
       <HeadTextDiv>
-        {/* <div> */}
         <DrawerFontPadding>
           <DrawerFontStyle>Dashboard</DrawerFontStyle>
         </DrawerFontPadding>
-        {/* </div> */}
         <HeadTexts>
           <DrawerFontDiv>Organizations</DrawerFontDiv>
           <ChevronMargin>
